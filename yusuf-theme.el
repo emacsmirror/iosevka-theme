@@ -27,6 +27,20 @@
 ;; along with this program.  If not, see
 ;; <https://www.gnu.org/licenses/>.
 
+;;; Commentary:
+
+;; Use multiple stylistic sets of the Iosevka (Fixed) font family at
+;; the same time.  They align perfectly.
+
+;; For this package to work, you need to have all stylistic sets of
+;; the Iosevka Fixed font family installed and available.
+
+;;; Roadmap:
+
+;; Add more face definitions.
+
+;; Add user option to choose a variant other than `Iosevka Fixed'.
+
 ;;; Code:
 
 (deftheme yusuf)
