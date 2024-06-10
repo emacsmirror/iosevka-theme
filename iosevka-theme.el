@@ -1,10 +1,10 @@
-;;; yusuf-theme.el --- Theme using various stylistic sets of Iosevka font  -*- lexical-binding: t; -*-
+;;; iosevka-theme.el --- Theme using various stylistic sets of Iosevka font  -*- lexical-binding: t; -*-
 
 ;; Copyright (C) 2024 Free Software Foundation, Inc.
 
 ;; Author:                  Mekeor Melire <mekeor@posteo.de>
 ;; Created:                 2024
-;; Homepage:                https://codeberg.org/mekeor/yusuf-theme
+;; Homepage:                https://codeberg.org/mekeor/iosevka-theme
 ;; Keywords:                faces, theme
 ;; Maintainer:              Mekeor Melire <mekeor@posteo.de>
 ;; Package-Requires:        ((emacs "28.1"))
@@ -43,7 +43,7 @@
 
 ;;; Code:
 
-(deftheme yusuf)
+(deftheme iosevka)
 
 (let*
   ;; https://github.com/be5invis/iosevka/blob/main/doc/stylistic-sets.md
@@ -68,7 +68,7 @@
     (recursive  "Iosevka Fixed SS17")
     (input      "Iosevka Fixed SS18"))
 
-  (custom-theme-set-faces 'yusuf
+  (custom-theme-set-faces 'iosevka
     `(default                ((t :family ,default)))
     `(font-lock-comment-face ((t :family ,recursive)))
     `(font-lock-doc-face     ((t :family ,pt)))
@@ -82,6 +82,6 @@
   (add-to-list 'custom-theme-load-path
     (file-name-directory load-file-name)))
 
-(provide-theme 'yusuf)
+(provide-theme 'iosevka)
 
-;;; yusuf-theme.el ends here
+;;; iosevka-theme.el ends here
