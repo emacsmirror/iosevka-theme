@@ -45,42 +45,42 @@
 
 (deftheme iosevka)
 
-(let*
-  ;; https://github.com/be5invis/iosevka/blob/main/doc/stylistic-sets.md
-  ( (default    "Iosevka Fixed")
-    (curly      "Iosevka Fixed Curly")
-    (andale     "Iosevka Fixed SS01")
-    (anonymous  "Iosevka Fixed SS02")
-    (consolas   "Iosevka Fixed SS03")
-    (menlo      "Iosevka Fixed SS04")
-    (fira       "Iosevka Fixed SS05")
-    (liberation "Iosevka Fixed SS06")
-    (monaco     "Iosevka Fixed SS07")
-    (pragmata   "Iosevka Fixed SS08")
-    (source     "Iosevka Fixed SS09")
-    (envy       "Iosevka Fixed SS10")
-    (x-window   "Iosevka Fixed SS11")
-    (ubuntu     "Iosevka Fixed SS12")
-    (lucida     "Iosevka Fixed SS13")
-    (jetbrains  "Iosevka Fixed SS14")
-    (plex       "Iosevka Fixed SS15")
-    (pt         "Iosevka Fixed SS16")
-    (recursive  "Iosevka Fixed SS17")
-    (input      "Iosevka Fixed SS18"))
+;; https://github.com/be5invis/iosevka/blob/main/doc/stylistic-sets.md
+(let* ((default    "Iosevka Fixed")
+       (curly      "Iosevka Fixed Curly")
+       (andale     "Iosevka Fixed SS01")
+       (anonymous  "Iosevka Fixed SS02")
+       (consolas   "Iosevka Fixed SS03")
+       (menlo      "Iosevka Fixed SS04")
+       (fira       "Iosevka Fixed SS05")
+       (liberation "Iosevka Fixed SS06")
+       (monaco     "Iosevka Fixed SS07")
+       (pragmata   "Iosevka Fixed SS08")
+       (source     "Iosevka Fixed SS09")
+       (envy       "Iosevka Fixed SS10")
+       (x-window   "Iosevka Fixed SS11")
+       (ubuntu     "Iosevka Fixed SS12")
+       (lucida     "Iosevka Fixed SS13")
+       (jetbrains  "Iosevka Fixed SS14")
+       (plex       "Iosevka Fixed SS15")
+       (pt         "Iosevka Fixed SS16")
+       (recursive  "Iosevka Fixed SS17")
+       (input      "Iosevka Fixed SS18"))
 
-  (custom-theme-set-faces 'iosevka
-    `(default                ((t :family ,default)))
-    `(font-lock-comment-face ((t :family ,recursive)))
-    `(font-lock-doc-face     ((t :family ,pt)))
-    `(font-lock-number-face  ((t :family ,pragmata)))
-    `(font-lock-string-face  ((t :family ,plex)))
-    `(tooltip                ((t :family ,curly)))))
+  (custom-theme-set-faces
+   'iosevka
+   `(default                ((t :family ,default)))
+   `(font-lock-comment-face ((t :family ,recursive)))
+   `(font-lock-doc-face     ((t :family ,pt)))
+   `(font-lock-number-face  ((t :family ,pragmata)))
+   `(font-lock-string-face  ((t :family ,plex)))
+   `(tooltip                ((t :family ,curly)))))
 
 ;;;###autoload
 (when load-file-name
   (require 'custom)
   (add-to-list 'custom-theme-load-path
-    (file-name-directory load-file-name)))
+               (file-name-directory load-file-name)))
 
 (provide-theme 'iosevka)
 
